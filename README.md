@@ -49,6 +49,7 @@ reboot
 ## NTP
 ```
 pacman -S ntp fake-hwclock
+systemctl enable fake-hwclock.service
 systemctl enable ntpd.service
 systemctl start ntpd.service
 ```
